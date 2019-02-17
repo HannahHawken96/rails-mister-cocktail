@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3 form_background">
+    <% cocktail_url(cocktail) %>
+      <h1>Add a new dose to <%= cocktail.name %></h1>
+        <div class="dropdown">
+          <span>Mouse over me</span>
+          <div class="dropdown-content">
+            <%= simple_form_for [@cocktail, @dose] do |f| %>
+              <%= f.input :ingredient_id, collection: Ingredient.all  %>
+              <%= f.input :description %>
+              <%= f.button :submit , class: 'btn btn-primary' %>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
+        <%= link_to "Return to cocktail menu", cocktails_path %>
+      </div>
+    </div>
+  </div>
+</div>

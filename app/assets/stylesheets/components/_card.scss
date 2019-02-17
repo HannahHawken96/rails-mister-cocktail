@@ -1,0 +1,39 @@
+.container {
+  bottom-margin: 10px;
+  padding: 50;
+}
+.card {
+  height: 175px;
+  width: vw;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+  margin: 10px;
+  border-radius: 6px;
+}
+
+a {
+  color: white;
+
+  &:hover {
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+
+.card-list {
+  font-size: 10px;
+  font-family: Verdana;
+  color: white;
+  font-weight: lighter;
+  position: absolute;
+  margin: 2px;
+  list-style-type:none;
+}
+
+.card-link:hover {
+  opacity: 0.1;
+  font-weight: bold;
+}

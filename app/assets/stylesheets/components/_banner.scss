@@ -1,0 +1,40 @@
+.banner {
+  color: white;
+  text-align: center;
+  height: 88vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .banner-content {
+    opacity: 0.6;
+    position: absolute;
+    float: top;
+
+    .banner h1 {
+      font-size: 50px;
+      font-weight: bold;
+      text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+      margin-top: 8px;
+      position: absolute;
+      color: white;
+
+      .banner h2 {
+        color: white;
+        font-size: 20px;
+        font-weight: lighter;
+        font-family: Verdana;
+
+        .banner a {
+          color: white;
+          font-size: 20px;
+          font-weight: lighter;
+          font-family: Verdana;
+        }
+      }
+    }
+  }
+}
+

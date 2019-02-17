@@ -1,0 +1,12 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= @cocktail.photo %>');">
+  <div class="container">
+    <h1><%= @cocktail.name %></h1>
+    <ul style="list-style-type:none;">
+      <li><%= link_to "Add a new dose", new_cocktail_dose_path(@cocktail) %></li>
+      <li><%= link_to "Return to cocktail menu", cocktails_path %></li>
+    </ul>
+  </div>
+</div>
+
+
+
