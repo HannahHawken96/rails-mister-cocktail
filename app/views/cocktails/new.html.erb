@@ -4,12 +4,14 @@
       <h1>Add a new cocktail</h1>
       <%= simple_form_for @cocktail do |f| %>
         <%= f.input :name %>
-        <%= f.input :photo %>
+        <%= f.input :remote_photo_url %>
         <%= f.input :photo_cache, as: :hidden %>
         <%= f.button :submit , class: 'btn btn-primary' %>
       <% end %>
       <%= link_to "Return to cocktail menu", cocktails_path %>
+      <%= flash[:success].html_safe unless flash[:success].blank? %>
     </div>
+
   </div>
 </div>
 
