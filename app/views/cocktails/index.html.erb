@@ -33,7 +33,7 @@
     <div class="card">
       <% @cocktails.each do |cocktail| %>
         <div class="col-xs-6 col-sm-4">
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cocktail.reomte_photo_url %>');">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cocktail.photo %>');">
             <div class="row">
               <ul class="card-list">
                 <li><%= cocktail.name %></li>
